@@ -12,7 +12,7 @@ class Balance extends React.Component {
             <p className="h6 balance">Payout table</p>
           </div>
           <div className="col">
-            <div className="notify d-inline">
+            <div className="notify d-flex">
               <SearchField
                 placeholder="Search something"
                 // onChange={onChange}
