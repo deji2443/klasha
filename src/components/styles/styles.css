@@ -25,6 +25,9 @@
   .makeStyles-root-1 {
     display: none !important;
   }
+  header.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorPrimary.jss2.mui-fixed.MuiPaper-elevation4 {
+    display: none !important;
+  }
 }
 
 .MuiAppBar-colorPrimary {
