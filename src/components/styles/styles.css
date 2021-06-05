@@ -284,6 +284,12 @@ button.react-search-field-button {
 }
 span.dot {
   position: absolute;
-  right: 10rem;
+  right: 9rem;
+}
+input.react-search-field-input {
+  margin-bottom: .5rem;
+}
+.makeStyles-textField-14 {
+  margin-bottom: .5rem;
 }
 }
