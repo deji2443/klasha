@@ -173,7 +173,87 @@ span.dot {
 button.mb-2.payout-btn.btn.btn-primary {
   width: 104px;
   height: 42px;
+  margin-left: .5rem;
 
   background: #3d8f83;
   border-radius: 4px;
+}
+
+.fund{
+  background: #f5f5f5;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 260px;
+}
+
+.balance-value {
+  margin-top: 2rem;
+  color: #2a2a2a;
+  font-size: 36px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  line-height: 43px;
+  letter-spacing: .1px;
+  font-family: 'Space Grotesk';
+}
+
+.fund-p{
+  margin-top: .5rem;
+  padding-left: .5rem;
+}
+
+.p-2.bd-highlight.balance-child {
+  border-left: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+p.total-balance-text{
+  color: #2c665d;
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 17px;
+  font-family: 'Founders Grotesk';
+}
+
+.makeStyles-formControl-33 {
+  margin: 0px!important;
+  min-width: 80px;
+}
+
+.MuiFilledInput-root {
+  border-radius: 4px;
+  background-color: #f5f5f5!important;
+}
+
+.MuiFilledInput-underline:before {
+  border-bottom: transparent!important;
+}
+
+
+button.react-search-field-button {
+  border-left: none!important;
+  border-bottom:  1px solid rgb(221, 221, 221)!important;
+  position: absolute;
+    margin-left: -2rem;
+    padding-left: 1rem;
+}
+
+.MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl {
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.MuiInput-underline:before{
+  border-bottom: none!important;
+}
+
+.makeStyles-container-13 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
 }
