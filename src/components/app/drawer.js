@@ -17,12 +17,12 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import DashboardOutlinedIcon from "@material-ui/icons/DashboardOutlined";
 import AccountBalanceWalletOutlinedIcon from "@material-ui/icons/AccountBalanceWalletOutlined";
-// import PeopleAltOutlinedIcon from "@material-ui/icons/PeopleAltOutlined";
-// import ShowChartOutlinedIcon from "@material-ui/icons/ShowChartOutlined";
-// import TuneOutlinedIcon from "@material-ui/icons/TuneOutlined";
-// import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
-// import CallOutlinedIcon from "@material-ui/icons/CallOutlined";
-// import ExitToAppOutlinedIcon from "@material-ui/icons/ExitToAppOutlined";
+import PeopleAltOutlinedIcon from "@material-ui/icons/PeopleAltOutlined";
+import ShowChartOutlinedIcon from "@material-ui/icons/ShowChartOutlined";
+import TuneOutlinedIcon from "@material-ui/icons/TuneOutlined";
+import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
+import CallOutlinedIcon from "@material-ui/icons/CallOutlined";
+import ExitToAppOutlinedIcon from "@material-ui/icons/ExitToAppOutlined";
 
 const drawerWidth = 240;
 
@@ -140,12 +140,13 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {["Dashboard", "Balance", "Customers", "Analytics"].map(
+          {["Dashboard", "Balance"].map(
             (text, index) => (
               <ListItem button key={text}>
                 <ListItemIcon>
-                  {index % 2 === 0 ? (
+                  {index % 4 === 0 ? (
                     <DashboardOutlinedIcon />
+                    
                   ) : (
                     <AccountBalanceWalletOutlinedIcon />
                   )}
@@ -155,15 +156,46 @@ export default function PersistentDrawerLeft() {
             )
           )}
         </List>
+        <List>
+          {["Customers", "Analytics"].map(
+            (text, index) => (
+              <ListItem button key={text}>
+                <ListItemIcon>
+                  {index % 4 === 0 ? (
+                    <PeopleAltOutlinedIcon />
+                    
+                  ) : (
+                    <ShowChartOutlinedIcon />
+                  )}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItem>
+            )
+          )}
+        </List>
         <Divider />
         <List>
-          {["Settings", "Team", "Contacts", "Logout"].map((text, index) => (
+          {["Settings", "Team"].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
                 {index % 2 === 0 ? (
-                  <DashboardOutlinedIcon />
+                  <TuneOutlinedIcon />
                 ) : (
-                  <AccountBalanceWalletOutlinedIcon />
+                  <StarBorderOutlinedIcon />
+                )}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          ))}
+        </List>
+        <List>
+          {["Contacts", "Logout"].map((text, index) => (
+            <ListItem button key={text}>
+              <ListItemIcon>
+                {index % 2 === 0 ? (
+                  <CallOutlinedIcon />
+                ) : (
+                  <ExitToAppOutlinedIcon  />
                 )}
               </ListItemIcon>
               <ListItemText primary={text} />
