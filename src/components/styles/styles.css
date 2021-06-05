@@ -257,3 +257,33 @@ button.react-search-field-button {
   flex-wrap: wrap;
   margin-top: 0.4rem;
 }
+
+.payout{
+  flex: 1 0;
+}
+
+.flexer{
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .payout{
+    flex: none;
+  }
+  .notify {
+    text-align: left;
+}
+.flexer{
+  display: block;
+}
+.makeStyles-container-13 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+span.dot {
+  position: absolute;
+  right: 9.5rem;
+}
+}

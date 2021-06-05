@@ -32,11 +32,11 @@ class Balance extends React.Component {
       </div>
         </div>
         <div className="row mb-2">
-          <div className="col">
+          <div className="payout">
             <p className="h6 balance">Payout table</p>
           </div>
-          <div className="col">
-            <div className="notify d-flex">
+          <div className="payout">
+            <div className="notify flexer">
               <SearchField
                 placeholder="Search something"
                 // onChange={onChange}
